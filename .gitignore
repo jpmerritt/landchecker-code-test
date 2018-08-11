@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.DS_Store
+.sass-cache
+*.orig
+front/build/*
+build/*
+.idea
+scripts/emails
+database.json
+e2e/reports
+package-lock.json
+dbConfigs.js
+.vscode
+.next
