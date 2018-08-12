@@ -37,7 +37,7 @@ app
 
 		server.listen(8302, err => {
 			if (err) throw err;
-			console.log(">landchecker-code-sample Ready on http://localhost:8302");
+			console.log(">landchecker-code-test Ready on http://localhost:8302");
 		});
 	})
 	.catch(ex => {

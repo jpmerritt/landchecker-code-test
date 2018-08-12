@@ -14,6 +14,13 @@ export default class extends React.Component {
 		properties: PropTypes.array,
 		onFeatureClick: PropTypes.func
 	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			center: [145.249903, -38.106526],
+			zoom: [10]
+		};
+	}
 	render() {
 		let properties = this.props.properties.map(property => {
 			return (
@@ -36,8 +43,8 @@ export default class extends React.Component {
 				fitBoundsOptions={{
 					animate: false
 				}}
-				zoom={[10]}
-				center={[145.249903, -38.106526]}
+				zoom={this.state.zoom}
+				center={this.state.center}
 				className="map"
 			>
 				<ZoomControl position={"top-right"} />
