@@ -11,7 +11,8 @@ let mapboxStyle = "mapbox://styles/landchecker/cikn8jw2f00fxbgm1djbpuwxl";
 
 export default class extends React.Component {
 	static propTypes = {
-		properties: PropTypes.array
+		properties: PropTypes.array,
+		onFeatureClick: PropTypes.func
 	};
 	render() {
 		let properties = this.props.properties.map(property => {
@@ -19,7 +20,9 @@ export default class extends React.Component {
 				<Feature
 					coordinates={[property.longitude, property.latitude]}
 					key={property.id}
-					onClick={() => {}}
+					onClick={() => {
+						this.props.onFeatureClick(property);
+					}}
 				/>
 			);
 		});

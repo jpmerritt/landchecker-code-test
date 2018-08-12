@@ -17,16 +17,7 @@ let Page = class extends React.Component {
 					// 	font-family: "icons";
 					// 	src: url("/static/fonts/icomoon/icomoon.woff") format("woff");
 					// }
-
-					.contentContainer {
-						flex: 0 0 100%;
-						max-width: 1220px;
-						padding: 0 24px;
-						margin-left: auto;
-						margin-right: auto;
-						display: flex;
-						flex-flow: row wrap;
-					}
+					@import url("https://fonts.googleapis.com/css?family=Lato");
 
 					html,
 					body,
@@ -163,7 +154,11 @@ let Page = class extends React.Component {
 					*:after {
 						box-sizing: border-box;
 					}
-
+					html,
+					body {
+						height: 100%;
+						font-family: Lato;
+					}
 					body {
 						min-height: 100vh;
 						display: flex;
@@ -181,7 +176,7 @@ let Page = class extends React.Component {
 						flex: 1 0 100%;
 						width: 100%;
 						display: flex;
-						flex-flow: column wrap;
+						flex-flow: row wrap;
 						position: relative;
 					}
 				`}</style>

@@ -25,8 +25,8 @@ app
 					"addresses.full_address",
 					"addresses.state",
 					"addresses.postcode",
-					"lgas.name as lga_name",
-					"lgas.long_name as lga_long_name"
+					"lgas.name as council",
+					"lgas.long_name as council_long_name"
 				)
 				.from("properties")
 				.leftJoin("addresses", "properties.id", "addresses.property_id")
