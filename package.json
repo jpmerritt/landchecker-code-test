@@ -10,8 +10,9 @@
     "start": "NODE_ENV=production node server.js"
   },
   "author": "",
-  "license": "Private",
+  "license": "UNLICENSED",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "fs-readfile-promise": "^3.0.1",
     "knex": "^0.15.2",

@@ -3,7 +3,7 @@ const Knex = require("knex");
 const neatCsv = require("neat-csv");
 const readFilePromise = require("fs-readfile-promise");
 
-knex = Knex(knexConfig.development);
+const knex = Knex(knexConfig.development);
 
 (async function() {
   try {
