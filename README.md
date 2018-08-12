@@ -1,11 +1,11 @@
-#Landchecker Code Test
+# Landchecker Code Test
 
 
 
 ![](static/working.png)
 The working application.
 
-###Instructions
+### Instructions
 
 This project implements the requirments of the landchecker coding challenge. It uses a short node.js scripts to load a postgres database with sample data and exposes a next.js application which serves a react application and json api.
 
